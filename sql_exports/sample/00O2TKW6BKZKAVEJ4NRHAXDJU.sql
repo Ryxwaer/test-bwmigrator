@@ -14,6 +14,7 @@ WITH routine_00O2TKW6BKZKAVEJ4NRHAXDJU_call_function_zvbw_sd_get_cuttyp AS (
   FROM `2LIS_13_VDITM` AS i
 ),
 
+  
 routine_00O2TKW6BKZKAVEJ4NRHAXDJU_read_table_it_matnr AS (
   ------------------------------------------------------------------
   -- This CTE replicates the READ TABLE it_matnr logic:
