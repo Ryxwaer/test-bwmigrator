@@ -13,8 +13,6 @@ WITH routine_00O2TKW6BKZKAVEJ4NRHAXDJU_call_function_zvbw_sd_get_cuttyp AS (
     --, NULL AS e_abort
   FROM `2LIS_13_VDITM` AS i
 ),
-
-  
 routine_00O2TKW6BKZKAVEJ4NRHAXDJU_read_table_it_matnr AS (
   ------------------------------------------------------------------
   -- This CTE replicates the READ TABLE it_matnr logic:
@@ -23,7 +21,7 @@ routine_00O2TKW6BKZKAVEJ4NRHAXDJU_read_table_it_matnr AS (
   -- 2) If a matching row is found, it_matnr-/bic/zc_cuttyp is read.
   -- Here, we perform that lookup via LEFT JOIN on MATNR = /bic/zc_matnr,
   -- retrieving any matching /bic/zc_cuttyp from it_matnr.
-  -----------------------------------------------------------------
+  -------------------------------------------------------------------
   SELECT
     cf.*,
     m.`/bic/zc_cuttyp` AS matched_cuttyp
